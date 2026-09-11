@@ -1,3 +1,7 @@
+:root {
+    --font-color: tomato;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +16,7 @@ header {
     background: #D3A376;
     padding: 10px 30px;
     height: 50px;
+    border-bottom: 1px solid black;
 }
 .siteName {
     display: flex;
@@ -25,7 +30,7 @@ header {
     color: black;
 }
 .siteName span {
-    color: tomato;
+    color: var(--font-color);
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -47,8 +52,9 @@ main {
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap: 30px;
 }
 .main-site {
     display: flex;
@@ -57,6 +63,9 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: transparent;
+    width: 60%;
+    padding: 10px;
 }
 .main-site p {
     font-size: 1.5rem;
@@ -65,7 +74,7 @@ main {
     padding: 16px 25px;
     border: none;
     border-radius: 10px;
-    background: tomato;
+    background: var(--font-color);
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
     font-size: 1.6rem;
@@ -76,6 +85,19 @@ main {
     cursor: pointer;
 }
 .main-site span {
-    color: tomato;
+    color: var(--font-color);
     font-weight: 800;
+}
+.hero-carousel {
+    display: flex;
+    flex-direction: row;
+    height: 233px;
+    width: 32%;
+    border-radius: 10px;
+    overflow: auto;
+}
+.pictures{
+    object-fit: cover;
+    height: 100%;
+    width: 90%;
 }
