@@ -64,7 +64,7 @@ main {
     align-items: center;
     text-align: center;
     background: transparent;
-    width: 60%;
+    width: 100%;
     padding: 10px;
 }
 .main-site p {
@@ -87,21 +87,4 @@ main {
 .main-site span {
     color: var(--font-color);
     font-weight: 800;
-}
-.hero-carousel {
-    display: flex;
-    flex-direction: row;
-    height: 233px;
-    width: 32%;
-    border-radius: 10px;
-    overflow: auto;
-    scrollbar-width: none;
-}
-.hero-carousel::-webkit-scrollbar {
-    display: none;
-}
-.pictures{
-    object-fit: cover;
-    height: 100%;
-    width: 90%;
 }
