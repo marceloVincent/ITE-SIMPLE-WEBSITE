@@ -95,6 +95,10 @@ main {
     width: 32%;
     border-radius: 10px;
     overflow: auto;
+    scrollbar-width: none;
+}
+.hero-carousel::-webkit-scrollbar {
+    display: none;
 }
 .pictures{
     object-fit: cover;
